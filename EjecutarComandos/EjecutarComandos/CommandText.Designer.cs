@@ -33,20 +33,23 @@
             // 
             // txtCommandText
             // 
-            this.txtCommandText.Location = new System.Drawing.Point(12, 12);
+            this.txtCommandText.Location = new System.Drawing.Point(24, 23);
+            this.txtCommandText.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtCommandText.Multiline = true;
             this.txtCommandText.Name = "txtCommandText";
-            this.txtCommandText.Size = new System.Drawing.Size(244, 106);
+            this.txtCommandText.Size = new System.Drawing.Size(484, 200);
             this.txtCommandText.TabIndex = 0;
             // 
             // CommandText
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 134);
+            this.ClientSize = new System.Drawing.Size(568, 258);
             this.Controls.Add(this.txtCommandText);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "CommandText";
             this.Text = "Ejecutar Comandos";
+            this.Load += new System.EventHandler(this.CommandText_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
