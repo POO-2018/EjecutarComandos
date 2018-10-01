@@ -34,11 +34,32 @@ namespace Ejecutar_comandos
 
             try
             {
+                // Establecer la conexión
+                conn.Open();
 
+                // Crear el comando
+                txtReader.AppendText("Comando creado.\n\n");
+
+                // Ejecutar el query vía ExecuteReader
+                SqlDataReader rdr = cmd.ExecuteReader();
+
+                // Navegar por todos los registros de Data Reader
+                while (rdr.Read())
+                {
+                    txtReader.AppendText("\nProducto: ");
+                    txtReader.AppendText(rdr.GetValue(1) + "\t\t" + rdr.GetValue(0));
+                    txtReader.AppendText("\n");
+                }
             }
             catch (SqlException ex)
             {
-                
+                MessageBox.Show(ex.Message + ex.StackTrace, "¡Detalles de la excepción!");
+            }
+            finally
+            {
+                // Cerrar la conexión
+                conn.Close();
+                txtReader.AppendText("Conexión finalizada.");
             }
         }
     }
