@@ -43,9 +43,9 @@
             this.gbEliminarMoneda.Controls.Add(this.btnCargarMonedas);
             this.gbEliminarMoneda.Controls.Add(this.lstCodigoMoneda);
             this.gbEliminarMoneda.Location = new System.Drawing.Point(24, 23);
-            this.gbEliminarMoneda.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.gbEliminarMoneda.Margin = new System.Windows.Forms.Padding(6);
             this.gbEliminarMoneda.Name = "gbEliminarMoneda";
-            this.gbEliminarMoneda.Padding = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.gbEliminarMoneda.Padding = new System.Windows.Forms.Padding(6);
             this.gbEliminarMoneda.Size = new System.Drawing.Size(784, 456);
             this.gbEliminarMoneda.TabIndex = 0;
             this.gbEliminarMoneda.TabStop = false;
@@ -53,26 +53,28 @@
             // 
             // lblEstadoEliminacion
             // 
+            this.lblEstadoEliminacion.AutoSize = true;
             this.lblEstadoEliminacion.Location = new System.Drawing.Point(50, 331);
             this.lblEstadoEliminacion.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.lblEstadoEliminacion.Name = "lblEstadoEliminacion";
-            this.lblEstadoEliminacion.Size = new System.Drawing.Size(684, 44);
+            this.lblEstadoEliminacion.Size = new System.Drawing.Size(0, 25);
             this.lblEstadoEliminacion.TabIndex = 3;
             // 
             // btnEliminarMoneda
             // 
             this.btnEliminarMoneda.Location = new System.Drawing.Point(372, 196);
-            this.btnEliminarMoneda.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnEliminarMoneda.Margin = new System.Windows.Forms.Padding(6);
             this.btnEliminarMoneda.Name = "btnEliminarMoneda";
             this.btnEliminarMoneda.Size = new System.Drawing.Size(302, 44);
             this.btnEliminarMoneda.TabIndex = 2;
             this.btnEliminarMoneda.Text = "Eliminar Moneda";
             this.btnEliminarMoneda.UseVisualStyleBackColor = true;
+            this.btnEliminarMoneda.Click += new System.EventHandler(this.btnEliminarMoneda_Click);
             // 
             // btnCargarMonedas
             // 
             this.btnCargarMonedas.Location = new System.Drawing.Point(372, 58);
-            this.btnCargarMonedas.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnCargarMonedas.Margin = new System.Windows.Forms.Padding(6);
             this.btnCargarMonedas.Name = "btnCargarMonedas";
             this.btnCargarMonedas.Size = new System.Drawing.Size(302, 44);
             this.btnCargarMonedas.TabIndex = 1;
@@ -85,7 +87,7 @@
             this.lstCodigoMoneda.FormattingEnabled = true;
             this.lstCodigoMoneda.ItemHeight = 25;
             this.lstCodigoMoneda.Location = new System.Drawing.Point(50, 58);
-            this.lstCodigoMoneda.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.lstCodigoMoneda.Margin = new System.Windows.Forms.Padding(6);
             this.lstCodigoMoneda.Name = "lstCodigoMoneda";
             this.lstCodigoMoneda.Size = new System.Drawing.Size(270, 254);
             this.lstCodigoMoneda.TabIndex = 0;
@@ -96,10 +98,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(832, 502);
             this.Controls.Add(this.gbEliminarMoneda);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "StoredProcedure";
             this.Text = "Ejecutando Stored Procedure";
             this.gbEliminarMoneda.ResumeLayout(false);
+            this.gbEliminarMoneda.PerformLayout();
             this.ResumeLayout(false);
 
         }
